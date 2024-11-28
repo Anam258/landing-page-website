@@ -1,25 +1,21 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Clients from './components/Clients';
-import Features from './components/Features';
-import Statistics from './components/Statistics';
-import Blog from './components/Blog';
-import CallToAction from './components/CallToAction';
-import Footer from './components/Footer';
-
+import Clients from "./components/Client";
+import Features from "./components/Features";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import { LandingPage } from "./components/landingpages/LandingPage";
+import LandingPage2 from "./components/landingpages/LandingPage2";
 
 export default function Home() {
+  
   return (
-    
-    <>
-      <Navbar />
-      <Hero />
+    <div>
+      <Header />
+      
+      <Hero/>
       <Clients />
-      <Features />
-      <Statistics />
-      <Blog />
-      <CallToAction />
-      <Footer />
-    </>
+      <Features/>
+      <LandingPage/>
+      <LandingPage2/>
+    </div>
   );
 }

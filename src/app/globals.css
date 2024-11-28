@@ -1,22 +1,12 @@
 /* styles/globals.css */
+
+/* Ensure Tailwind directives are imported */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom global styles */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
+@layer components {
+  .border-border {
+    border: 2px solid #000; /* Example style */
   }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 1s ease-in forwards;
 }
